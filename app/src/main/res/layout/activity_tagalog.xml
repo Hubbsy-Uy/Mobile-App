@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homeey"
+    android:padding="16dp"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+    <!-- RecyclerView -->
+
+    <!-- Dictionary Button -->
+
+    <!-- Chat Button -->
+
+
+
+    <Button
+        android:id="@+id/dictionaryButton"
+        android:layout_width="307dp"
+        android:layout_height="55dp"
+        android:background="@android:color/transparent"
+        android:text="Dictionary"
+        android:textColor="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.799" />
+
+    <!-- Exercise Button -->
+
+    <!-- Profile Button -->
+
+    <Button
+        android:id="@+id/exercise"
+        android:layout_width="76dp"
+        android:layout_height="65dp"
+        android:background="@android:color/transparent"
+        android:text="Dictionary"
+        android:textColor="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dictionaryButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="105dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        android:background="@android:color/transparent"
+        android:text="Dictionary"
+        android:textColor="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toEndOf="@+id/exercise"
+        app:layout_constraintTop_toBottomOf="@+id/dictionaryButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <Spinner
+        android:id="@+id/languageSpinner"
+        android:layout_width="140dp"
+        android:layout_height="25dp"
+        android:background="@drawable/spin2"
+        android:gravity="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.778"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <Button
+        android:id="@+id/chat"
+        android:layout_width="176dp"
+        android:layout_height="79dp"
+        android:background="@android:color/transparent"
+        android:text="Dictionary"
+        android:textColor="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/tagalog"
+        android:layout_width="284dp"
+        android:layout_height="146dp"
+        android:background="@drawable/group_121279"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

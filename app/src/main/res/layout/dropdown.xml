@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25sp"
+        android:layout_marginEnd="25sp"
+        android:layout_centerInParent="true"
+        android:id="@+id/inputlayout"
+        android:hint="Ilocano"
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusTopStart="10sp"
+        app:boxStrokeWidth="110sp"
+        app:boxStrokeWidthFocused="0sp">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/inputTV"
+            android:inputType="none"
+            app:simpleItems="@array/options_list"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/inputlayout"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:text="Show toast"
+        android:id="@+id/btn"/>
+
+</RelativeLayout>

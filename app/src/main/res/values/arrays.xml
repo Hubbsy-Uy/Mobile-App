@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="options_list">
+        <item>Tagalog</item>
+        <item>Ibaloi</item>
+        <item>Cebuano</item>
+        <item>Kapampangan</item>
+    </string-array>
+</resources>

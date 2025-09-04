@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Test_four"
+        tools:targetApi="31">
+        <activity
+            android:name=".flashcards"
+            android:exported="false" />
+        <activity
+            android:name=".Taga3"
+            android:exported="false" />
+        <activity
+            android:name=".Taga2"
+            android:exported="false" />
+        <activity
+            android:name=".Taga1"
+            android:exported="false" />
+        <activity
+            android:name=".Tagalog"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:noHistory="true" />
+        <activity
+            android:name=".chat"
+            android:exported="true"
+            android:noHistory="true" />
+        <activity
+            android:name=".Dictionary"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+
+
+            <!-- </intent-filter> -->
+        </activity>
+
+        <receiver
+            android:name=".ConnectivityReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".profile1"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SpeakActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+
+            <!-- Optionally add intent filters if needed -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chatty"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+
+            <!-- Optionally add intent filters if needed -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".coins"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+
+            <!-- Optionally add intent filters if needed -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".exercise"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+
+            <!-- Optionally add intent filters if needed -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FirstPage"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.Test_four" />
+        <activity
+            android:name=".ThirdPage"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:noHistory="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
